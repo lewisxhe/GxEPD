@@ -42,6 +42,7 @@ public:
     void setFont(const GFXfont *f = NULL);
 #if defined(U8g2_for_Adafruit_GFX_h)
     void setFont(const uint8_t *font); // set u8g2 font
+    int16_t getUTF8Width(const char *str);
 #endif
 #if defined(_ADAFRUIT_TF_GFX_H_)
     void setFont(uint8_t f);

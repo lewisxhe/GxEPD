@@ -65,6 +65,11 @@ void GxFont_GFX::setFont(const uint8_t *font)
   _U8G2_FONTS_GFX.setFont(font);
 }
 
+int16_t GxFont_GFX::getUTF8Width(const char *str)
+{
+ return _U8G2_FONTS_GFX.getUTF8Width(str);
+}
+
 #endif
 
 #if defined(_ADAFRUIT_TF_GFX_H_)
